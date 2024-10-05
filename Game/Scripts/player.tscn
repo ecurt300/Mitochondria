@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvyml0rs15o6c"]
+
+[ext_resource type="Script" path="res://Game/Scripts/Player.gd" id="1_tf0lo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d3ih4"]
+radius = 11.0
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_jlmag"]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(185, 168)
+script = ExtResource("1_tf0lo")
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_d3ih4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, -4.76837e-07)
+scale = Vector2(14, 14)
+texture = SubResource("PlaceholderTexture2D_jlmag")
+metadata/_edit_group_ = true
